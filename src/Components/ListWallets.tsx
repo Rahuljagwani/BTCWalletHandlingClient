@@ -41,12 +41,12 @@ const ListWallets: React.FC = () => {
       <Header>
           <ul className='tabBar'>
             <li>
-              <Link to="/" style={{ color: 'white', textDecoration: 'none', fontSize: '20px' }}>
+              <Link to="/" style={{ color: 'white', textDecoration: 'none', fontSize: '15px' }}>
                 <FaWallet className="icons" />&nbsp;<u>Wallets</u>
               </Link>
             </li>
             <li>
-              <Link to="/transactions" style={{ color: 'white', textDecoration: 'none', fontSize: '20px' }}>
+              <Link to="/transactions" style={{ color: 'white', textDecoration: 'none', fontSize: '15px' }}>
                 <FaExternalLinkAlt className="icons" />&nbsp;Transactions
               </Link>
             </li>
