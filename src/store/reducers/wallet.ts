@@ -1,5 +1,4 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { address } from 'bitcoinjs-lib';
 
 interface Wallet {
   name: string,

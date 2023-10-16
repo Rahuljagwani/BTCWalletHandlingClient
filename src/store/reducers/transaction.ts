@@ -28,7 +28,7 @@ const transaction = createSlice({
       state.transactions = [];
     },
     insertTransactions: (state, action: PayloadAction<{ txs: any, walletAddress: string, walletName: string }>) => {
-      action.payload.txs.map((tx: any) => {
+      action.payload.txs.forEach((tx: any) => {
         const { inputs, outputs } = tx;
         const isAddressInInputs = inputs.some((input: any) => input.addresses.includes(action.payload.walletAddress));
         const isAddressInOutputs = outputs.some((output: any) => output.addresses.includes(action.payload.walletAddress));
