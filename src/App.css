@@ -1,0 +1,97 @@
+textarea {
+  max-width: 80%;
+  min-width: 80%;
+  height: 80px;
+  padding: 5px 0;
+  font-size: large;
+  background-color: #141517;
+  margin-top: 2px;
+  color: white;
+  border: 1px solid white;
+}
+
+.error {
+  margin-top: 20px;
+  color: rgb(233, 42, 42)
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+
+.loader-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 4px solid #3498db;
+  border-top: 4px solid transparent;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.bitcoin{
+  transform: rotate(-14deg); 
+  font-size: large;
+  color: rgb(235, 114, 15);
+}
+
+.icon-text-container {
+  display: flex;
+  align-self: center;
+  flex-direction: row !important;
+  align-items: left;
+  padding-top: 10px;
+  padding-bottom: 5px; 
+  justify-content: center;
+}
+
+.icon-text-container-bitcoin {
+  display: flex;
+  flex-direction: row !important;
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 40%;
+}
+
+
+.icons {
+  font-size: 18px;
+  margin-left: 0;
+  color: rgb(235, 114, 15);
+}
+
+.transactionCell {
+  color: #3498db !important;
+}
+
+.icon-container {
+  padding-top: 10px;
+  padding-bottom: 5px; 
+}
+
+.tabBar {
+  display: none;
+  position: absolute;
+  left: 25px;
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+@media (max-width: 768px) {
+  .tabBar {
+    display: flex;
+    left: 10px;
+  }
+}
